@@ -7,8 +7,10 @@ function fibonacci(num) {
   //**For loop
   for (let i = 1; i <= num; i++) { //i values will be our keys
     if (num === 0){
+      console.log("returning 0")
       return 0;
     } else if (num === 1){
+      console.log("returning 1")
       return 1;
     }
     console.log(`Giving the ${num}th fibonacci!`)
