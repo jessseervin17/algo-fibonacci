@@ -6,6 +6,7 @@ function fibonacci(num) {
   // Add values and keys as you go */
   //**For loop
   for (let i =0; i <= num; i++) { //i values will be our keys
+    console.log(`Giving the ${num}th fibonacci!`)
     console.log(fibonacciObject);
     let change = (i-1)+(i-2);
     fibonacciObject[i] = change;
@@ -14,6 +15,7 @@ function fibonacci(num) {
     if (i === 0){
       fibonacciObject[i]=0;
       console.log("ACTUALLY! Value is 0");
+      console.log(fibonacciObject);
     };
   };
   // generate fibonacci object
