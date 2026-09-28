@@ -8,9 +8,9 @@ function fibonacci(num) {
   for (let i =0; i <= num; i++) { //i values will be our keys
     console.log(fibonacciObject);
     fibonacciObject[i] = i+(i-1);
-    console.log(`new key is ${i}, value is ${i+(i-1)}`);
+    console.log(`new key is ${i}, value is ${(i-1)+(i-2)}`);
     if (i === 0){
-      fibonacciObject[i]++;
+      fibonacciObject[i]+=3;
       console.log("ACTUALLY! Value is 0");
     };
   };
