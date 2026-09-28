@@ -9,8 +9,9 @@ function fibonacci(num) {
     console.log(fibonacciObject);
     fibonacciObject[i] = i+(i-1);
     console.log(`new key is ${i}, value is ${(i-1)+(i-2)}`);
+    console.log(fibonacciObject);
     if (i === 0){
-      fibonacciObject[i]+=3;
+      fibonacciObject[i]=0;
       console.log("ACTUALLY! Value is 0");
     };
   };
