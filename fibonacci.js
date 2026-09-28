@@ -6,12 +6,20 @@ function fibonacci(num) {
   // Add values and keys as you go */
   //**For loop
   for (let i =0; i <= num; i++) { //i values will be our keys
+    console.log(fibonacciObject);
     fibonacciObject[i] = i+(i-1);
-  }
+    console.log(`new key is ${i}, value is ${i+(i-1)}`);
+    if (i === 0){
+      fibonacciObject[i]++;
+      console.log("ACTUALLY! Value is 0");
+    };
+  };
   // generate fibonacci object
   // end when have reached nth number key
   // return value of nth key */
+  console.log(`Done, returning ${fibonacciObject[num]}`);
   return fibonacciObject[num];
 }
+
 module.exports = fibonacci;
 
