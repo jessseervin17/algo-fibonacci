@@ -15,7 +15,7 @@ function fibonacci(num) {
     }
     console.log(`Giving the ${num}th fibonacci!`)
     console.log(fibonacciObject);
-    let change = (i-1)+(i-2);
+    let change = (num-1)+(num-2);
     console.log(change)
     fibonacciObject[i] = change;
     console.log(`new key is ${i}, value is ${change}`);
