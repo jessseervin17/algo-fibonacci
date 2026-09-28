@@ -7,8 +7,9 @@ function fibonacci(num) {
   //**For loop
   for (let i =0; i <= num; i++) { //i values will be our keys
     console.log(fibonacciObject);
-    fibonacciObject[i] = i+(i-1);
-    console.log(`new key is ${i}, value is ${(i-1)+(i-2)}`);
+    let change = (i-1)+(i-2);
+    fibonacciObject[i] = change;
+    console.log(`new key is ${i}, value is ${change}`);
     console.log(fibonacciObject);
     if (i === 0){
       fibonacciObject[i]=0;
@@ -21,6 +22,10 @@ function fibonacci(num) {
   console.log(`Done, returning ${fibonacciObject[num]}`);
   return fibonacciObject[num];
 }
+
+fibonacci(0)
+fibonacci(2)
+fibonacci(5)
 
 module.exports = fibonacci;
 
